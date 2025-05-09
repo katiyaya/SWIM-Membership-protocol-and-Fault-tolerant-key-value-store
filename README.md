@@ -1,1 +1,0 @@
-# SWIM-Membership-protocol-and-Fault-tolerant-key-value-store
