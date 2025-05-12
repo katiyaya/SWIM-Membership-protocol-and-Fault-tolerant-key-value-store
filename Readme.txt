@@ -1,5 +1,5 @@
-<font size="5">
-     The first project (MP1Node.{cpp,h}) is about implementing a membership protocol. A membership protocol is a mechanism used in distributed systems to maintain a list of active nodes in a network. It helps nodes discover peers, track failures, and manage group membership dynamically. My version of the protocol implements SWIM-style membership protocol elements along with some elements of gossip-style heartbeating communication, which ensure robust message exchanging system, that ensures that each node receives up-to-date information about the status of its neighbours in the cluster and thus maintain the "view" (information about node leaves, joins, failures, ect.) in the cluster.
+
+     **The first project (MP1Node.{cpp,h})** is about implementing a membership protocol. A membership protocol is a mechanism used in distributed systems to maintain a list of active nodes in a network. It helps nodes discover peers, track failures, and manage group membership dynamically. My version of the protocol implements SWIM-style membership protocol elements along with some elements of gossip-style heartbeating communication, which ensure robust message exchanging system, that ensures that each node receives up-to-date information about the status of its neighbours in the cluster and thus maintain the "view" (information about node leaves, joins, failures, ect.) in the cluster.
      Since it is infeasible to run a thousand cluster nodes (peers) over a real network, an implementation of an emulated network layer (EmulNet) was provided. The membership
 protocol implementation sits above EmulNet in a peer- to-peer (P2P) layer, but below an App layer.
 The implemented code is in files MP1Node.{cpp,h}. Unit tests (autograder script) are provided to test that the programm passes all requerements.
@@ -37,5 +37,4 @@ To test, run ./KVStoreGrader.sh
      The grader is provided only for MP2Node.{cpp,h} in this repository, but it passing the tests implies that a working membership protocol is already implemented (MP1Node.{cpp,h}), so there is no need to provide a separate test for MP1Node.{cpp,h}.
      
 Note that there is a lot of room for optimization in my implementation of the code, that i am aware of (code heavily relies on C-style memory management (memcpy, malloc, raw pointers, etc.), but decided to maintain the already existing coding style provided in other files besides MP2Node.{cpp,h} and MP1Node.{cpp,h} and keep my coding style unique altogether. 
-</font>
 
