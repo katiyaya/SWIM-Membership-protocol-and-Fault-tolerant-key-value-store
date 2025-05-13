@@ -44,5 +44,5 @@ succeed because the key has been re-replicated again at three nodes.
 3. To run the grader ./KVStoreGrader.sh
 The grader is provided only for MP2Node.{cpp,h} in this repository, but it passing the tests implies that a working membership protocol is already implemented (MP1Node.{cpp,h}), so there is no need to provide a separate test for MP1Node.{cpp,h}.
      
-**Note** that there is a lot of room for optimization in my implementation of the code, that i am aware of (code heavily relies on C-style memory management (memcpy, malloc, raw pointers, etc.), but decided to maintain the already existing coding style provided in other files besides MP2Node.{cpp,h} and MP1Node.{cpp,h} and keep my coding style unique altogether. Thank you for reading this description. 
+**! Note !**     There is room for optimization in my implementation of the code, that i am aware of (code heavily relies on C-style memory management (memcpy, malloc, raw pointers, etc.), but decided to maintain the already existing coding style provided in other files besides MP2Node.{cpp,h} and MP1Node.{cpp,h} and keep the coding style in my part of the code unique altogether (and to show that the algorithm design was developed from scratch and no external code was copied).
 
