@@ -13,11 +13,11 @@ jobs:
     - name: Install dependencies
       run: sudo apt-get install -y cmake make g++
 
-    - name: Configure CMake
-      run: cmake -S . -B build
+    - name: Generate makefile
+      run: cmake .
 
     - name: Build the project
-      run: cmake --build build
+      run: make 
 
     - name: Run Key-value store grader for testing
       run: ./KVStoreGrader.sh || echo "Grading failed"
