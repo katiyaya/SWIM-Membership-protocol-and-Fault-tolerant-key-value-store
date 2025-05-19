@@ -49,4 +49,5 @@ The grader is provided only for MP2Node.{cpp,h} in this repository, but it passi
 The code I developed is contained in:
 1. MP2Node.{cpp,h} (Key-value store logic)
 2. MP1Node.{cpp,h} (Membership protocol)
+
 This implementation relies on C-style memory management (memcpy, malloc, raw pointers, etc.), ensuring a distinct coding style throughout my work. This approach also shows that the algorithm design was developed from scratch, without incorporating external code.
