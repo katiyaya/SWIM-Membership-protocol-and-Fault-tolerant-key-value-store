@@ -15,8 +15,8 @@ jobs:
     - name: Build the project using Makefile
       run: make
 
-    - name: Run Key-value store grader and save output
-      run: ./KVStoreGrader.sh > KVStoreGrader.log 2>&1 || echo "Grading failed"
+    - name: Run Key-value store grader and display output
+      run: ./KVStoreGrader.sh 2>&1 | tee KVStoreGrader.log
 
     - name: Upload grader log 
       uses: actions/upload-artifact@v4
