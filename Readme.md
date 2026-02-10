@@ -40,7 +40,7 @@ succeed because the key has been re-replicated again at three nodes.
 
 **To test:**
 View the Grader Script Output
-1. Click on "Actions" tab -> "Actions Workflow" tab -> "build" (with the green check ✅)
+1. Click on "Actions" tab -> "Actions Workflow" tab -> "update build.yml" (with the green check ✅)
 2. Inside the workflow run, look for the "Run Key-value store grader for testing", expand it to see the output of ./KVStoreGrader.sh
    
 The grader is provided only for MP2Node.{cpp,h} in this repository, but it passing the tests implies that a working membership protocol is already implemented (MP1Node.{cpp,h}), so there is no need to provide a separate test for MP1Node.{cpp,h}.
